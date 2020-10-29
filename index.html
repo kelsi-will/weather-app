@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Project Weather App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <script
+    src="https://kit.fontawesome.com/61c1db91bc.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <body>
+    <div class="container">
+      <div class="weather-app">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-6">
+              <input
+                id="search-input"
+                class="form-control"
+                type="search"
+                placeholder="Search a city"
+                autofocus="on"
+              />
+            </div>
+            <div class="col-3">
+              <input
+                class="form-control btn btn-dark w-100"
+                type="submit"
+                value="search"
+              />
+            </div>
+            <div class="col-3">
+              <button class="btn btn-light w-100" id="current-location-button">
+                current
+              </button>
+            </div>
+          </div>
+        </form>
+        <h1 id="city"></h1>
+        <ul>
+          <li id="date"></li>
+          <li id="weather-description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <span class="icon-description">
+              <i class="fas fa-cloud"></i>
+            </span>
+            <span class="temperature" id="temperature"></span>
+            <span class="units">
+              <a href="#" id="fahrenheit-link">°F</a> |
+              <a href="#" id="celsius-link">°C</a>
+            </span>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li id="humidity"></li>
+              <li id="wind"></li>
+            </ul>
+          </div>
+        </div>
+        <br />
+        <p class="feels-like" id="feels-like">Feels like</p>
+
+        <div class="row">
+          <div class="col">
+            <h5 class="col-title">Mon</h5>
+            <div class="col-text">
+              <span class="high-temp">77°</span>
+              <span class="low-temp">69°</span>
+            </div>
+            <i class="fas fa-cloud-sun"></i>
+          </div>
+
+          <div class="col">
+            <h5 class="col-title">Tues</h5>
+            <div class="col-text">
+              <span class="high-temp">76°</span>
+              <span class="low-temp">70°</span>
+            </div>
+            <i class="fas fa-sun"></i>
+          </div>
+
+          <div class="col">
+            <h5 class="col-title">Wed</h5>
+            <div class="col-text">
+              <span class="high-temp">72°</span>
+              <span class="low-temp">59°</span>
+            </div>
+            <i class="fas fa-cloud-sun-rain"></i>
+          </div>
+
+          <div class="col">
+            <h5 class="col-title">Thur</h5>
+            <div class="col-text">
+              <span class="high-temp">71°</span>
+              <span class="low-temp">56°</span>
+            </div>
+            <i class="fas fa-sun"></i>
+          </div>
+
+          <div class="col">
+            <h5 class="col-title">Fri</h5>
+            <div class="col-text">
+              <span class="high-temp">66°</span>
+              <span class="low-temp">51°</span>
+            </div>
+            <i class="fas fa-wind"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>

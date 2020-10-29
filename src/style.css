@@ -1,0 +1,88 @@
+h5 {
+  text-align: center;
+}
+h1,
+h5,
+.weather-description {
+  font-family: Helvetica, Arial, sans-serif;
+}
+h5,
+.weather-description {
+  font-size: 20px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+  text-transform: capitalize;
+}
+.temperature {
+  margin: 110px 0 0 0;
+  padding: 0 0 0 20px;
+  font-size: 64px;
+  color: #000000;
+}
+
+.weather-app {
+  border: 1px solid #778899;
+  background: #eeeeee;
+  border-radius: 10px;
+  max-width: 630px;
+  margin: 20px auto;
+  padding: 20px;
+}
+.search-form {
+  margin: 10px 5px;
+}
+.btn {
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.temperature,
+.high-temp {
+  font-family: "Abril Fatface", cursive;
+}
+.temperature {
+  line-height: 1;
+}
+ul {
+  margin: 0 0 20px;
+  padding: 0;
+}
+li {
+  list-style: none;
+  line-height: 22px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.units {
+  font-size: 16px;
+  position: relative;
+  top: -40px;
+}
+
+.fa-cloud {
+  color: #fff;
+  font-size: 50px;
+  margin: 0 0 0 10px;
+}
+.feels-like {
+  margin: 10px 0 0;
+}
+
+.col {
+  position: relative;
+  bottom: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 100px 20px 0;
+}
+
+.high-temp,
+.fa-cloud-sun,
+.fa-cloud-sun-rain,
+.fa-wind,
+.fa-sun {
+  font-size: 24px;
+}
