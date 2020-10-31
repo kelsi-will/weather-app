@@ -86,3 +86,9 @@ li {
 .fa-sun {
   font-size: 24px;
 }
+
+.github-link {
+  position: relative;
+  left: 240px;
+  font-size: 12px;
+}
