@@ -54,6 +54,9 @@ li {
   list-style: none;
   line-height: 22px;
   font-size: 20px;
+}
+
+li:first-letter {
   text-transform: capitalize;
 }
 .units {
