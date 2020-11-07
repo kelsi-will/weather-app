@@ -24,11 +24,14 @@ h1 {
 }
 
 .weather-app {
+  max-width: 630px;
+  margin: 20px auto;
+}
+
+.weather-app-wrapper {
   border: 1px solid #778899;
   background: #eeeeee;
   border-radius: 10px;
-  max-width: 630px;
-  margin: 20px auto;
   padding: 20px;
 }
 .search-form {
@@ -83,10 +86,4 @@ li:first-letter {
 .fa-wind,
 .fa-sun {
   font-size: 24px;
-}
-
-.github-link {
-  position: relative;
-  left: 240px;
-  font-size: 12px;
 }

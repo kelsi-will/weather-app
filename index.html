@@ -25,108 +25,113 @@
   <body>
     <div class="container">
       <div class="weather-app">
-        <form class="search-form" id="search-form">
+        <div class="weather-app-wrapper">
+          <form class="search-form" id="search-form">
+            <div class="row">
+              <div class="col-6">
+                <input
+                  id="search-input"
+                  class="form-control"
+                  type="search"
+                  placeholder="Search a city"
+                  autofocus="on"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  class="form-control btn btn-dark w-100"
+                  type="submit"
+                  value="search"
+                />
+              </div>
+              <div class="col-3">
+                <button
+                  class="btn btn-light w-100"
+                  id="current-location-button"
+                >
+                  current
+                </button>
+              </div>
+            </div>
+          </form>
+          <h1 id="city"></h1>
+          <ul>
+            <li>Last updated: <span id="date"></span></li>
+            <li id="weather-description"></li>
+          </ul>
           <div class="row">
             <div class="col-6">
-              <input
-                id="search-input"
-                class="form-control"
-                type="search"
-                placeholder="Search a city"
-                autofocus="on"
-                autocomplete="off"
-              />
+              <img src="" alt="" id="icon" class="float-left" />
+              <span class="temperature" id="temperature"></span>
+              <span class="units">
+                <a href="#" id="fahrenheit-link">°F</a> |
+                <a href="#" id="celsius-link">°C</a>
+              </span>
             </div>
-            <div class="col-3">
-              <input
-                class="form-control btn btn-dark w-100"
-                type="submit"
-                value="search"
-              />
-            </div>
-            <div class="col-3">
-              <button class="btn btn-light w-100" id="current-location-button">
-                current
-              </button>
+            <div class="col-6">
+              <ul>
+                <li id="humidity"></li>
+                <li id="wind"></li>
+              </ul>
             </div>
           </div>
-        </form>
-        <h1 id="city"></h1>
-        <ul>
-          <li>Last updated: <span id="date"></span></li>
-          <li id="weather-description"></li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img src="" alt="" id="icon" class="float-left" />
-            <span class="temperature" id="temperature"></span>
-            <span class="units">
-              <a href="#" id="fahrenheit-link">°F</a> |
-              <a href="#" id="celsius-link">°C</a>
-            </span>
-          </div>
-          <div class="col-6">
-            <ul>
-              <li id="humidity"></li>
-              <li id="wind"></li>
-            </ul>
+          <br />
+          <p class="feels-like" id="feels-like">Feels like</p>
+
+          <div class="row">
+            <div class="col">
+              <h5 class="col-title">Mon</h5>
+              <div class="col-text">
+                <span class="high-temp">77°</span>
+                <span class="low-temp">69°</span>
+              </div>
+              <i class="fas fa-cloud-sun"></i>
+            </div>
+
+            <div class="col">
+              <h5 class="col-title">Tues</h5>
+              <div class="col-text">
+                <span class="high-temp">75°</span>
+                <span class="low-temp">70°</span>
+              </div>
+              <i class="fas fa-sun"></i>
+            </div>
+
+            <div class="col">
+              <h5 class="col-title">Wed</h5>
+              <div class="col-text">
+                <span class="high-temp">71°</span>
+                <span class="low-temp">59°</span>
+              </div>
+              <i class="fas fa-cloud-sun-rain"></i>
+            </div>
+
+            <div class="col">
+              <h5 class="col-title">Thur</h5>
+              <div class="col-text">
+                <span class="high-temp">71°</span>
+                <span class="low-temp">56°</span>
+              </div>
+              <i class="fas fa-sun"></i>
+            </div>
+
+            <div class="col">
+              <h5 class="col-title">Fri</h5>
+              <div class="col-text">
+                <span class="high-temp">66°</span>
+                <span class="low-temp">51°</span>
+              </div>
+              <i class="fas fa-wind"></i>
+            </div>
           </div>
         </div>
-        <br />
-        <p class="feels-like" id="feels-like">Feels like</p>
-
-        <div class="row">
-          <div class="col">
-            <h5 class="col-title">Mon</h5>
-            <div class="col-text">
-              <span class="high-temp">77°</span>
-              <span class="low-temp">69°</span>
-            </div>
-            <i class="fas fa-cloud-sun"></i>
-          </div>
-
-          <div class="col">
-            <h5 class="col-title">Tues</h5>
-            <div class="col-text">
-              <span class="high-temp">75°</span>
-              <span class="low-temp">70°</span>
-            </div>
-            <i class="fas fa-sun"></i>
-          </div>
-
-          <div class="col">
-            <h5 class="col-title">Wed</h5>
-            <div class="col-text">
-              <span class="high-temp">71°</span>
-              <span class="low-temp">59°</span>
-            </div>
-            <i class="fas fa-cloud-sun-rain"></i>
-          </div>
-
-          <div class="col">
-            <h5 class="col-title">Thur</h5>
-            <div class="col-text">
-              <span class="high-temp">71°</span>
-              <span class="low-temp">56°</span>
-            </div>
-            <i class="fas fa-sun"></i>
-          </div>
-
-          <div class="col">
-            <h5 class="col-title">Fri</h5>
-            <div class="col-text">
-              <span class="high-temp">66°</span>
-              <span class="low-temp">51°</span>
-            </div>
-            <i class="fas fa-wind"></i>
-          </div>
-        </div>
-      </div>
-      <div class="github-link">
-        <a href="https://github.com/kelsi-will/weather-app" target="_blank">
-          Open-source code
-        </a>
-        by Kelsi Williams
+        <small>
+          <a href="https://github.com/kelsi-will/weather-app" target="_blank">
+            Open-source code
+          </a>
+          by Kelsi Williams</small
+        >
       </div>
     </div>
     <script src="src/script.js"></script>
