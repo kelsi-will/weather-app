@@ -63,14 +63,14 @@ function displayWeather(response) {
   document.querySelector(
     "#feels-like"
   ).innerHTML = `<em>Feels like</em> <strong>${fahrenheitFeelsLike}°</strong>`;
+
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
   document.querySelector(
     "#humidity"
   ).innerHTML = `Humidity: ${response.data.main.humidity}%`;
-  document.querySelector("#wind").innerHTML = `Wind: ${Math.round(
-    response.data.wind.speed
-  )} mph`;
+  milesPerHour = Math.round(response.data.wind.speed);
+  document.querySelector("#wind").innerHTML = `Wind: ${milesPerHour} mph`;
   document.querySelector("#date").innerHTML = formatDate(
     response.data.dt * 1000
   );
@@ -86,6 +86,9 @@ function displayCelsiusTemperature(event) {
   let feelsLikeElement = document.querySelector("#feels-like");
   let celsiusFeelsLike = Math.round(((fahrenheitFeelsLike - 32) * 5) / 9);
   feelsLikeElement.innerHTML = `<em>Feels like</em> <strong>${celsiusFeelsLike}°</strong>`;
+  let windSpeedElement = document.querySelector("#wind");
+  let kilometersPerHour = Math.round(milesPerHour * 1.609);
+  windSpeedElement.innerHTML = `Wind: ${kilometersPerHour} km/h`;
 }
 
 function displayFahrenheitTemperature(event) {
@@ -98,10 +101,13 @@ function displayFahrenheitTemperature(event) {
   feelsLikeElement.innerHTML = `<em>Feels like</em> <strong>${Math.round(
     fahrenheitFeelsLike
   )}°</strong>`;
+  let windSpeedElement = document.querySelector("#wind");
+  windSpeedElement.innerHTML = `Wind: ${milesPerHour} mph`;
 }
 
 let fahrenheitTemperature = null;
 let fahrenheitFeelsLike = null;
+let milesPerHour = null;
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);

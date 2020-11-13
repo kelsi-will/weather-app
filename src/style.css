@@ -46,7 +46,7 @@ h1 {
 }
 
 ul {
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   padding: 0;
 }
 li {
@@ -74,7 +74,7 @@ li:first-letter {
 }
 
 .feels-like {
-  margin: 10px 0 0;
+  margin: 5px 0 0;
 }
 
 .col {
@@ -82,7 +82,7 @@ li:first-letter {
   bottom: 0px;
   text-align: center;
   text-transform: uppercase;
-  margin: 100px 20px 0;
+  margin: 50px 20px 0;
 }
 
 .high-temp,
