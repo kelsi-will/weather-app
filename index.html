@@ -58,16 +58,20 @@
           <h1 id="city"></h1>
           <ul>
             <li>Last updated: <span id="date"></span></li>
-            <li id="weather-description"></li>
+            <li id="description"></li>
           </ul>
           <div class="row">
             <div class="col-6">
-              <img src="" alt="" id="icon" class="float-left" />
-              <span class="temperature" id="temperature"></span>
-              <span class="units">
-                <a href="#" id="fahrenheit-link">°F</a> |
-                <a href="#" id="celsius-link">°C</a>
-              </span>
+              <div class="clearfix weather-description">
+                <img src="" alt="" id="icon" class="float-left" />
+                <div class="float-left">
+                <span class="temperature" id="temperature"></span>
+                <span class="units">
+                  <a href="#" id="fahrenheit-link" class="active">°F</a> |
+                  <a href="#" id="celsius-link">°C</a>
+                  </div>
+                </span>
+              </div>
             </div>
             <div class="col-6">
               <ul>

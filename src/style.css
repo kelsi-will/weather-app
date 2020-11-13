@@ -17,8 +17,6 @@ h1 {
   text-transform: capitalize;
 }
 .temperature {
-  margin: 110px 0 0 0;
-  padding: 0 0 0 20px;
   font-size: 64px;
   color: #000000;
 }
@@ -46,9 +44,7 @@ h1 {
 .high-temp {
   font-family: "Abril Fatface", cursive;
 }
-.temperature {
-  line-height: 1;
-}
+
 ul {
   margin: 0 0 20px;
   padding: 0;
@@ -66,6 +62,15 @@ li:first-letter {
   font-size: 16px;
   position: relative;
   top: -40px;
+}
+
+.weather-description .active {
+  color: #000000;
+  cursor: default;
+}
+
+.weather-description .active:hover {
+  text-decoration: none;
 }
 
 .feels-like {
