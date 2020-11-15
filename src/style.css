@@ -1,5 +1,5 @@
 body {
-  color: #ffffff;
+  color: #ffffffe1;
 }
 h5 {
   text-align: center;
@@ -42,8 +42,7 @@ h1 {
   border-radius: 10px;
 }
 
-.temperature,
-.high-temp {
+.temperature {
   font-family: "Abril Fatface", cursive;
 }
 
@@ -79,22 +78,6 @@ li:first-letter {
 
 .feels-like {
   margin: 5px 0 0;
-}
-
-.col {
-  position: relative;
-  bottom: 0px;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 50px 20px 0;
-}
-
-.high-temp,
-.fa-cloud-sun,
-.fa-cloud-sun-rain,
-.fa-wind,
-.fa-sun {
-  font-size: 24px;
 }
 
 .coder-name {
